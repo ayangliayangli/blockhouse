@@ -19,6 +19,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src import data_durable_via_mysql
 
+# 在数据库中建表
+data_durable_via_mysql.init_db()
+
 # 无需登录,完成一个用户的创建
 print("start add HOST GROUP ---:")
 data_durable_via_mysql.add_host_group()
